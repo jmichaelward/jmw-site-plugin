@@ -27,6 +27,24 @@ class Project extends PostType {
 	protected $slug = 'jmw-project';
 
 	/**
+	 * Get arguments for this post type.
+	 *
+	 * @return array
+	 * @since  2019-05-19
+	 * @author Jeremy Ward <jeremy.ward@webdevstudios.com>
+	 */
+	protected function get_args(): array {
+		return [
+			'hierarchical' => true,
+			'supports'     => [
+				'title',
+				'editor',
+				'page-attributes',
+			],
+		];
+	}
+
+	/**
 	 * Get the labels for this post type.
 	 *
 	 * @return array
