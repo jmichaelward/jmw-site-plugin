@@ -1,6 +1,6 @@
 <?php
 /**
- *
+ * Class to register the Project post type.
  *
  * @author  Jeremy Ward <jeremy.ward@webdevstudios.com>
  * @package JMichaelWard\JMWPlugin\Content\PostType
