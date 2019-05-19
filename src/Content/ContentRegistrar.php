@@ -10,6 +10,7 @@
 namespace JMichaelWard\JMWPlugin\Content;
 
 use JMichaelWard\JMWPlugin\Content\PostType\Project;
+use JMichaelWard\JMWPlugin\Content\PostType\SpeakingEvent;
 use WebDevStudios\OopsWP\Structure\Content\ContentType;
 use WebDevStudios\OopsWP\Structure\Service;
 
@@ -29,6 +30,7 @@ class ContentRegistrar extends Service {
 	 */
 	private $post_types = [
 		Project::class,
+		SpeakingEvent::class,
 	];
 
 	/**
