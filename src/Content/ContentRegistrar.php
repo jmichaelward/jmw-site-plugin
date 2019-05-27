@@ -30,7 +30,7 @@ class ContentRegistrar extends Service {
 	 */
 	private $post_types = [
 		Project::class,
-		SpeakingEvent::class,
+		Event::class,
 	];
 
 	/**
