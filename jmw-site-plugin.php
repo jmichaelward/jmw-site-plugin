@@ -23,5 +23,4 @@ if ( ! class_exists( '\JMichaelWard\JMWPlugin\JMWPlugin' ) ) {
 	return;
 }
 
-$plugin = new JMWPlugin( __FILE__ );
-$plugin->run();
+add_action( 'plugins_loaded', [ new JMWPlugin( __FILE__ ), 'run' ] );

@@ -1,0 +1,45 @@
+{
+    "key": "group_5cec240c77675",
+    "title": "Slides",
+    "fields": [
+        {
+            "key": "field_5cec2412db3ee",
+            "label": "Slides URL",
+            "name": "jmw_event_slides_url",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "jmw-event"
+            },
+            {
+                "param": "post_taxonomy",
+                "operator": "==",
+                "value": "event-type:speaking"
+            }
+        ]
+    ],
+    "menu_order": 2,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1558981095
+}
