@@ -29,7 +29,7 @@
             {
                 "param": "post_taxonomy",
                 "operator": "==",
-                "value": "event-type:speaking"
+                "value": "event-type:presentation"
             }
         ]
     ],
