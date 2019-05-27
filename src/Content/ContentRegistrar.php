@@ -10,10 +10,10 @@
 namespace JMichaelWard\JMWPlugin\Content;
 
 use JMichaelWard\JMWPlugin\Content\Meta as Meta;
-use JMichaelWard\JMWPlugin\Content\PostType\Project;
+use JMichaelWard\JMWPlugin\Content\PostType\ProjectUpdate;
 use JMichaelWard\JMWPlugin\Content\PostType\Event;
 use JMichaelWard\JMWPlugin\Content\Taxonomy\EventType;
-use JMichaelWard\JMWPlugin\Content\Taxonomy\ProjectType;
+use JMichaelWard\JMWPlugin\Content\Taxonomy\Project;
 use WebDevStudios\OopsWP\Structure\Content\ContentType;
 use WebDevStudios\OopsWP\Structure\Service;
 use WebDevStudios\OopsWP\Utility\FilePathDependent;
@@ -35,7 +35,7 @@ class ContentRegistrar extends Service {
 	 * @since 2019-05-19
 	 */
 	private $post_types = [
-		Project::class,
+		ProjectUpdate::class,
 		Event::class,
 	];
 
@@ -46,7 +46,7 @@ class ContentRegistrar extends Service {
 	 * @since 2019-05-19
 	 */
 	private $taxonomies = [
-		ProjectType::class,
+		Project::class,
 		EventType::class,
 	];
 

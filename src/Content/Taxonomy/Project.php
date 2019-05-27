@@ -10,20 +10,20 @@
 namespace JMichaelWard\JMWPlugin\Content\Taxonomy;
 
 /**
- * Class ProjectType
+ * Class Project
  *
  * @author  Jeremy Ward <jeremy.ward@webdevstudios.com>
  * @package JMichaelWard\JMWPlugin\Content\Taxonomy
  * @since   2019-05-27
  */
-class ProjectType extends JMWTaxonomy {
+class Project extends JMWTaxonomy {
 	/**
 	 * Slug for this taxonomy.
 	 *
 	 * @var string
 	 * @since 2019-05-27
 	 */
-	protected $slug = 'project-type';
+	protected $slug = 'jmw-project';
 
 	/**
 	 * Object types for this taxonomy.
@@ -31,7 +31,22 @@ class ProjectType extends JMWTaxonomy {
 	 * @var array
 	 * @since 2019-05-27
 	 */
-	protected $object_types = [ 'jmw-project' ];
+	protected $object_types = [ 'jmw-project-updates' ];
+
+	/**
+	 * Rewrite the project taxonomy slug.
+	 *
+	 * @return array
+	 * @since  2019-05-27
+	 * @author Jeremy Ward <jeremy.ward@webdevstudios.com>
+	 */
+	protected function get_args(): array {
+		return [
+			'rewrite' => [
+				'slug' => 'projects',
+			],
+		];
+	}
 
 	/**
 	 * Labels for this taxonomy.
@@ -42,8 +57,8 @@ class ProjectType extends JMWTaxonomy {
 	 */
 	protected function get_labels(): array {
 		return [
-			'name'          => _x( 'Project Types', 'jmw-site-plugin' ),
-			'singular_name' => _x( 'Project Types', 'jmw-site-plugin' ),
+			'name'          => _x( 'Projects', 'jmw-site-plugin' ),
+			'singular_name' => _x( 'Project', 'jmw-site-plugin' ),
 		];
 	}
 }
