@@ -8,7 +8,6 @@
  */
 
 namespace JMichaelWard\JMWPlugin\Content\PostType;
-use WebDevStudios\OopsWP\Structure\Content\PostType;
 
 /**
  * Class Project
@@ -17,7 +16,7 @@ use WebDevStudios\OopsWP\Structure\Content\PostType;
  * @package JMichaelWard\JMWPlugin\Content\PostType
  * @since   2019-05-19
  */
-class Project extends PostType {
+class Project extends JMWPostType {
 	/**
 	 * The slug for this post type.
 	 *
