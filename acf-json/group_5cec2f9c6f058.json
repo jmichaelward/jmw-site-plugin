@@ -1,0 +1,83 @@
+{
+    "key": "group_5cec2f9c6f058",
+    "title": "Project Details",
+    "fields": [
+        {
+            "key": "field_5cec316d26e08",
+            "label": "Associated Project",
+            "name": "jmw_project_associated_project",
+            "type": "taxonomy",
+            "instructions": "Choose the project for which this page is associated.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "taxonomy": "jmw-project",
+            "field_type": "select",
+            "allow_null": 0,
+            "add_term": 1,
+            "save_terms": 1,
+            "load_terms": 1,
+            "return_format": "id",
+            "multiple": 0
+        },
+        {
+            "key": "field_5cec30718d816",
+            "label": "Production URL",
+            "name": "jmw_project_production_url",
+            "type": "url",
+            "instructions": "URL of the project in production.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_5cec2fa466d45",
+            "label": "Repository URL",
+            "name": "jmw_project_repository_url",
+            "type": "url",
+            "instructions": "URL of the project's repository.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            },
+            {
+                "param": "post_template",
+                "operator": "==",
+                "value": "templates\/template-project.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1558983164
+}
