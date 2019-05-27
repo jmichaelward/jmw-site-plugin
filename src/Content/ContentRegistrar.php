@@ -61,6 +61,18 @@ class ContentRegistrar extends Service {
 	];
 
 	/**
+	 * Run this registrar.
+	 *
+	 * @return void
+	 * @since  2019-05-27
+	 * @author Jeremy Ward <jeremy.ward@webdevstudios.com>
+	 */
+	public function run() {
+		parent::run();
+		$this->setup_meta_handlers();
+	}
+
+	/**
 	 * Register this service's hooks with WordPress.
 	 *
 	 * @return void
@@ -70,7 +82,6 @@ class ContentRegistrar extends Service {
 	public function register_hooks() {
 		add_action( 'init', [ $this, 'register_post_types' ] );
 		add_action( 'init', [ $this, 'register_taxonomies' ] );
-		add_action( 'init', [ $this, 'setup_meta_handlers' ] );
 	}
 
 	/**
