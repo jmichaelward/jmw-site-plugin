@@ -10,7 +10,9 @@
 namespace JMichaelWard\JMWPlugin\Content;
 
 use JMichaelWard\JMWPlugin\Content\PostType\Project;
-use JMichaelWard\JMWPlugin\Content\PostType\SpeakingEvent;
+use JMichaelWard\JMWPlugin\Content\PostType\Event;
+use JMichaelWard\JMWPlugin\Content\Taxonomy\EventType;
+use JMichaelWard\JMWPlugin\Content\Taxonomy\ProjectType;
 use WebDevStudios\OopsWP\Structure\Content\ContentType;
 use WebDevStudios\OopsWP\Structure\Service;
 
@@ -39,7 +41,10 @@ class ContentRegistrar extends Service {
 	 * @var array
 	 * @since 2019-05-19
 	 */
-	private $taxonomies = [];
+	private $taxonomies = [
+		ProjectType::class,
+		EventType::class,
+	];
 
 	/**
 	 * Register this service's hooks with WordPress.
