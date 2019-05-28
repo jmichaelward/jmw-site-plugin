@@ -34,11 +34,19 @@ class ProjectUpdate extends JMWPostType {
 	 */
 	protected function get_args(): array {
 		return [
-			'hierarchical' => true,
-			'supports'     => [
+			'hierarchical'      => true,
+			'show_in_menu'      => 'edit.php?post_type=jmw-project-cpt',
+			'show_in_nav_menus' => false,
+			'rewrite'           => [
+				'slug' => 'project-update',
+			],
+			'supports'          => [
 				'title',
 				'editor',
 				'page-attributes',
+			],
+			'taxonomies'        => [
+				'jmw-project-relationship',
 			],
 		];
 	}

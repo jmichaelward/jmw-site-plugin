@@ -3,28 +3,6 @@
     "title": "Project Details",
     "fields": [
         {
-            "key": "field_5cec316d26e08",
-            "label": "Associated Project",
-            "name": "jmw_project_associated_project",
-            "type": "taxonomy",
-            "instructions": "Choose the project for which this page is associated.",
-            "required": 1,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "taxonomy": "jmw-project",
-            "field_type": "select",
-            "allow_null": 0,
-            "add_term": 1,
-            "save_terms": 1,
-            "load_terms": 1,
-            "return_format": "id",
-            "multiple": 0
-        },
-        {
             "key": "field_5cec30718d816",
             "label": "Production URL",
             "name": "jmw_project_production_url",
@@ -62,12 +40,7 @@
             {
                 "param": "post_type",
                 "operator": "==",
-                "value": "page"
-            },
-            {
-                "param": "post_template",
-                "operator": "==",
-                "value": "templates\/template-project.php"
+                "value": "jmw-project-cpt"
             }
         ]
     ],
@@ -79,5 +52,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1558983164
+    "modified": 1559005394
 }
