@@ -2,9 +2,9 @@
 /**
  *
  *
- * @author  Jeremy Ward <jeremy.ward@webdevstudios.com>
- * @package JMichaelWard\JMWPlugin
+ * @author  Jeremy Ward <jeremy@jmichaelward.com>
  * @since   2019-05-19
+ * @package JMichaelWard\JMWPlugin
  */
 
 namespace JMichaelWard\JMWPlugin;
@@ -12,14 +12,15 @@ namespace JMichaelWard\JMWPlugin;
 use JMichaelWard\JMWPlugin\Content\ContentActionRegistrar;
 use JMichaelWard\JMWPlugin\Content\ContentRegistrar;
 use JMichaelWard\JMWPlugin\Content\AcfHandler;
+use JMichaelWard\JMWPlugin\View\ViewRegistrar;
 use WebDevStudios\OopsWP\Structure\Plugin\Plugin;
 
 /**
  * Class Plugin
  *
- * @author  Jeremy Ward <jeremy.ward@webdevstudios.com>
- * @package JMichaelWard\JMWPlugin
+ * @author  Jeremy Ward <jeremy@jmichaelward.com>
  * @since   2019-05-19
+ * @package JMichaelWard\JMWPlugin
  */
 class JMWPlugin extends Plugin {
 	/**
@@ -27,7 +28,7 @@ class JMWPlugin extends Plugin {
 	 *
 	 * @param string $file_path The file path of this plugin.
 	 *
-	 * @author Jeremy Ward <jeremy.ward@webdevstudios.com>
+	 * @author Jeremy Ward <jeremy@jmichaelward.com>
 	 * @since  2019-05-19
 	 */
 	public function __construct( string $file_path ) {
@@ -44,5 +45,6 @@ class JMWPlugin extends Plugin {
 		ContentRegistrar::class,
 		ContentActionRegistrar::class,
 		AcfHandler::class,
+		ViewRegistrar::class,
 	];
 }

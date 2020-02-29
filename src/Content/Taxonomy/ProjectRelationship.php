@@ -2,9 +2,9 @@
 /**
  * Taxonomy for Projects.
  *
- * @author  Jeremy Ward <jeremy.ward@webdevstudios.com>
- * @package JMichaelWard\JMWPlugin\Content\Taxonomy
+ * @author  Jeremy Ward <jeremy@jmichaelward.com>
  * @since   2019-05-27
+ * @package JMichaelWard\JMWPlugin\Content\Taxonomy
  */
 
 namespace JMichaelWard\JMWPlugin\Content\Taxonomy;
@@ -12,9 +12,9 @@ namespace JMichaelWard\JMWPlugin\Content\Taxonomy;
 /**
  * Class ProjectRelationship
  *
- * @author  Jeremy Ward <jeremy.ward@webdevstudios.com>
- * @package JMichaelWard\JMWPlugin\Content\Taxonomy
+ * @author  Jeremy Ward <jeremy@jmichaelward.com>
  * @since   2019-05-27
+ * @package JMichaelWard\JMWPlugin\Content\Taxonomy
  */
 class ProjectRelationship extends JMWTaxonomy {
 	/**
@@ -36,9 +36,9 @@ class ProjectRelationship extends JMWTaxonomy {
 	/**
 	 * Labels for this taxonomy.
 	 *
-	 * @return array
+	 * @author Jeremy Ward <jeremy@jmichaelward.com>
 	 * @since  2019-05-27
-	 * @author Jeremy Ward <jeremy.ward@webdevstudios.com>
+	 * @return array
 	 */
 	protected function get_labels(): array {
 		return [

@@ -2,9 +2,9 @@
 /**
  * Abstract post type class for this plugin's content.
  *
- * @author  Jeremy Ward <jeremy.ward@webdevstudios.com>
- * @package JMichaelWard\JMWPlugin\Content\PostType
+ * @author  Jeremy Ward <jeremy@jmichaelward.com>
  * @since   2019-05-27
+ * @package JMichaelWard\JMWPlugin\Content\PostType
  */
 
 namespace JMichaelWard\JMWPlugin\Content\PostType;
@@ -14,17 +14,17 @@ use WebDevStudios\OopsWP\Structure\Content\PostType;
 /**
  * Class JMWPostType
  *
- * @author  Jeremy Ward <jeremy.ward@webdevstudios.com>
- * @package JMichaelWard\JMWPlugin\Content\PostType
+ * @author  Jeremy Ward <jeremy@jmichaelward.com>
  * @since   2019-05-27
+ * @package JMichaelWard\JMWPlugin\Content\PostType
  */
 abstract class JMWPostType extends PostType {
 	/**
 	 * Default arguments for post types.
 	 *
-	 * @return array
+	 * @author Jeremy Ward <jeremy@jmichaelward.com>
 	 * @since  2019-05-27
-	 * @author Jeremy Ward <jeremy.ward@webdevstudios.com>
+	 * @return array
 	 */
 	protected function get_default_args(): array {
 		return array_merge(

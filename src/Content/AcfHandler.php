@@ -2,9 +2,9 @@
 /**
  * Handler for updating the location where ACF saves JSON data.
  *
- * @author  Jeremy Ward <jeremy.ward@webdevstudios.com>
- * @package JMichaelWard\JMWPlugin\Content\Meta
+ * @author  Jeremy Ward <jeremy@jmichaelward.com>
  * @since   2019-05-27
+ * @package JMichaelWard\JMWPlugin\Content\Meta
  */
 
 namespace JMichaelWard\JMWPlugin\Content;
@@ -15,9 +15,9 @@ use WebDevStudios\OopsWP\Utility\FilePathDependent;
 /**
  * Class AcfHandler
  *
- * @author  Jeremy Ward <jeremy.ward@webdevstudios.com>
- * @package JMichaelWard\JMWPlugin\Content\Meta
+ * @author  Jeremy Ward <jeremy@jmichaelward.com>
  * @since   2019-05-27
+ * @package JMichaelWard\JMWPlugin\Content\Meta
  */
 class AcfHandler extends Service {
 	use FilePathDependent;
@@ -25,9 +25,9 @@ class AcfHandler extends Service {
 	/**
 	 * Register hooks with WordPress.
 	 *
-	 * @return void
+	 * @author Jeremy Ward <jeremy@jmichaelward.com>
 	 * @since  2019-05-27
-	 * @author Jeremy Ward <jeremy.ward@webdevstudios.com>
+	 * @return void
 	 */
 	public function register_hooks() {
 		add_filter( 'acf/settings/save_json', [ $this, 'set_save_path' ] );
@@ -39,9 +39,9 @@ class AcfHandler extends Service {
 	 *
 	 * @param string $path The file path.
 	 *
-	 * @return void
+	 * @author Jeremy Ward <jeremy@jmichaelward.com>
 	 * @since  2019-05-27
-	 * @author Jeremy Ward <jeremy.ward@webdevstudios.com>
+	 * @return void
 	 */
 	public function set_file_path( string $path ) {
 		$this->file_path = $path . 'acf-json';
@@ -50,9 +50,9 @@ class AcfHandler extends Service {
 	/**
 	 * Set the ACF save file path.
 	 *
-	 * @return mixed
+	 * @author Jeremy Ward <jeremy@jmichaelward.com>
 	 * @since  2019-05-27
-	 * @author Jeremy Ward <jeremy.ward@webdevstudios.com>
+	 * @return mixed
 	 */
 	public function set_save_path() {
 		return $this->file_path;
@@ -63,11 +63,11 @@ class AcfHandler extends Service {
 	 *
 	 * @param array $file_paths ACF's array of file paths.
 	 *
-	 * @see https://www.advancedcustomfields.com/resources/local-json/#loading-explained
+	 * @see    https://www.advancedcustomfields.com/resources/local-json/#loading-explained
 	 *
 	 * @return array
 	 * @since  2019-05-27
-	 * @author Jeremy Ward <jeremy.ward@webdevstudios.com>
+	 * @author Jeremy Ward <jeremy@jmichaelward.com>
 	 */
 	public function set_load_path( array $file_paths ) {
 		unset( $file_paths[0] );

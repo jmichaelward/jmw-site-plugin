@@ -6,9 +6,9 @@
  * Author URI: https://jmichaelward.com
  * Text Domain: jmw-site-plugin
  *
+ * @author  Jeremy Ward <jeremy@jmichaelward.com>
+ * @since   2019-05-19
  * @package JMichaelWard\JMWPlugin
- * @author Jeremy Ward <jeremy.ward@webdevstudios.com>
- * @since  2019-05-19
  */
 
 use JMichaelWard\JMWPlugin\JMWPlugin;

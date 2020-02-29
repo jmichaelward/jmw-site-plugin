@@ -2,9 +2,9 @@
 /**
  * A little service to register actions for particular content-related events in WordPress.
  *
- * @author  Jeremy Ward <jeremy.ward@webdevstudios.com>
- * @package JMichaelWard\JMWPlugin\Content
+ * @author  Jeremy Ward <jeremy@jmichaelward.com>
  * @since   2019-05-27
+ * @package JMichaelWard\JMWPlugin\Content
  */
 
 namespace JMichaelWard\JMWPlugin\Content;
@@ -15,17 +15,17 @@ use WP_Post;
 /**
  * Class ContentActionRegistrar
  *
- * @author  Jeremy Ward <jeremy.ward@webdevstudios.com>
- * @package JMichaelWard\JMWPlugin\Content
+ * @author  Jeremy Ward <jeremy@jmichaelward.com>
  * @since   2019-05-27
+ * @package JMichaelWard\JMWPlugin\Content
  */
 class ContentActionRegistrar extends Service {
 	/**
 	 * Register this service's hooks with WordPress.
 	 *
-	 * @return void
+	 * @author Jeremy Ward <jeremy@jmichaelward.com>
 	 * @since  2019-05-27
-	 * @author Jeremy Ward <jeremy.ward@webdevstudios.com>
+	 * @return void
 	 */
 	public function register_hooks() {
 		add_action( 'publish_jmw-project-cpt', [ $this, 'create_project_relationship_term' ], 10, 2 );
@@ -37,9 +37,9 @@ class ContentActionRegistrar extends Service {
 	 * @param int     $post_id The post ID.
 	 * @param WP_Post $post    The Project post object.
 	 *
-	 * @return void
+	 * @author Jeremy Ward <jeremy@jmichaelward.com>
 	 * @since  2019-05-27
-	 * @author Jeremy Ward <jeremy.ward@webdevstudios.com>
+	 * @return void
 	 */
 	public function create_project_relationship_term( $post_id, $post ) {
 		if ( get_term_by( 'slug', $post->post_name, 'jmw-project-relationship' ) ) {
@@ -63,9 +63,9 @@ class ContentActionRegistrar extends Service {
 	 * @param WP_Post $post          A Project post object.
 	 * @param string  $previous_term The previous taxonomy term.
 	 *
-	 * @return void
+	 * @author Jeremy Ward <jeremy@jmichaelward.com>
 	 * @since  2019-05-27
-	 * @author Jeremy Ward <jeremy.ward@webdevstudios.com>
+	 * @return void
 	 */
 	private function update_term( $post, $previous_term ) {
 		$term = get_term_by( 'slug', $previous_term, 'jmw-project-relationship' );
@@ -87,9 +87,9 @@ class ContentActionRegistrar extends Service {
 	 * @param WP_Post $post          A Project post instance.
 	 * @param string  $previous_term The previous term.
 	 *
-	 * @return bool
+	 * @author Jeremy Ward <jeremy@jmichaelward.com>
 	 * @since  2019-05-27
-	 * @author Jeremy Ward <jeremy.ward@webdevstudios.com>
+	 * @return bool
 	 */
 	private function term_has_changed( $post, $previous_term ) {
 		return $previous_term !== $post->post_name;

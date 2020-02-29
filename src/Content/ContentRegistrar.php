@@ -2,9 +2,9 @@
 /**
  *
  *
- * @author  Jeremy Ward <jeremy.ward@webdevstudios.com>
- * @package JMichaelWard\JMWPlugin
+ * @author  Jeremy Ward <jeremy@jmichaelward.com>
  * @since   2019-05-19
+ * @package JMichaelWard\JMWPlugin
  */
 
 namespace JMichaelWard\JMWPlugin\Content;
@@ -18,9 +18,9 @@ use WebDevStudios\OopsWP\Utility\FilePathDependent;
 /**
  * Class ContentRegistrar
  *
- * @author  Jeremy Ward <jeremy.ward@webdevstudios.com>
- * @package JMichaelWard\JMWPlugin
+ * @author  Jeremy Ward <jeremy@jmichaelward.com>
  * @since   2019-05-19
+ * @package JMichaelWard\JMWPlugin
  */
 class ContentRegistrar extends Service {
 	use FilePathDependent;
@@ -51,9 +51,9 @@ class ContentRegistrar extends Service {
 	/**
 	 * Register this service's hooks with WordPress.
 	 *
-	 * @return void
+	 * @author Jeremy Ward <jeremy@jmichaelward.com>
 	 * @since  2019-05-19
-	 * @author Jeremy Ward <jeremy.ward@webdevstudios.com>
+	 * @return void
 	 */
 	public function register_hooks() {
 		add_action( 'init', [ $this, 'register_post_types' ] );
@@ -63,9 +63,9 @@ class ContentRegistrar extends Service {
 	/**
 	 * Register the post types for this site.
 	 *
-	 * @return void
+	 * @author Jeremy Ward <jeremy@jmichaelward.com>
 	 * @since  2019-05-19
-	 * @author Jeremy Ward <jeremy.ward@webdevstudios.com>
+	 * @return void
 	 */
 	public function register_post_types() {
 		foreach ( $this->post_types as $post_type_class ) {
@@ -76,9 +76,9 @@ class ContentRegistrar extends Service {
 	/**
 	 * Register the taxonomies for this site.
 	 *
-	 * @return void
+	 * @author Jeremy Ward <jeremy@jmichaelward.com>
 	 * @since  2019-05-19
-	 * @author Jeremy Ward <jeremy.ward@webdevstudios.com>
+	 * @return void
 	 */
 	public function register_taxonomies() {
 		foreach ( $this->taxonomies as $taxonomy_class ) {
@@ -91,9 +91,9 @@ class ContentRegistrar extends Service {
 	 *
 	 * @param ContentType $content_type A ContentType instance.
 	 *
-	 * @return void
+	 * @author Jeremy Ward <jeremy@jmichaelward.com>
 	 * @since  2019-05-19
-	 * @author Jeremy Ward <jeremy.ward@webdevstudios.com>
+	 * @return void
 	 */
 	private function register_content_type( ContentType $content_type ) {
 		$content_type->register();

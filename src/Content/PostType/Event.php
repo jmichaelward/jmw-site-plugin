@@ -2,9 +2,9 @@
 /**
  * Class to register the SpeakingEvent post type.
  *
- * @author  Jeremy Ward <jeremy.ward@webdevstudios.com>
- * @package JMichaelWard\JMWPlugin\Content\PostType
+ * @author  Jeremy Ward <jeremy@jmichaelward.com>
  * @since   2019-05-19
+ * @package JMichaelWard\JMWPlugin\Content\PostType
  */
 
 namespace JMichaelWard\JMWPlugin\Content\PostType;
@@ -12,9 +12,9 @@ namespace JMichaelWard\JMWPlugin\Content\PostType;
 /**
  * Class Event
  *
- * @author  Jeremy Ward <jeremy.ward@webdevstudios.com>
- * @package JMichaelWard\JMWPlugin\Content\PostType
+ * @author  Jeremy Ward <jeremy@jmichaelward.com>
  * @since   2019-05-19
+ * @package JMichaelWard\JMWPlugin\Content\PostType
  */
 class Event extends JMWPostType {
 	/**
@@ -28,9 +28,9 @@ class Event extends JMWPostType {
 	/**
 	 * Get arguments for this post type.
 	 *
-	 * @return array
+	 * @author Jeremy Ward <jeremy@jmichaelward.com>
 	 * @since  2019-05-19
-	 * @author Jeremy Ward <jeremy.ward@webdevstudios.com>
+	 * @return array
 	 */
 	protected function get_args(): array {
 		return [
@@ -43,9 +43,9 @@ class Event extends JMWPostType {
 	/**
 	 * Get labels for this post type.
 	 *
-	 * @return array
+	 * @author Jeremy Ward <jeremy@jmichaelward.com>
 	 * @since  2019-05-19
-	 * @author Jeremy Ward <jeremy.ward@webdevstudios.com>
+	 * @return array
 	 */
 	protected function get_labels(): array {
 		return [

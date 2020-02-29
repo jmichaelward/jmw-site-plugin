@@ -2,18 +2,19 @@
 /**
  *
  *
- * @author  Jeremy Ward <jeremy.ward@webdevstudios.com>
- * @package JMichaelWard\JMWPlugin\Content\PostType
+ * @author  Jeremy Ward <jeremy@jmichaelward.com>
  * @since   2019-05-27
+ * @package JMichaelWard\JMWPlugin\Content\PostType
  */
 
 namespace JMichaelWard\JMWPlugin\Content\PostType;
+
 /**
  * Class Project
  *
- * @author  Jeremy Ward <jeremy.ward@webdevstudios.com>
- * @package JMichaelWard\JMWPlugin\Content\PostType
+ * @author  Jeremy Ward <jeremy@jmichaelward.com>
  * @since   2019-05-27
+ * @package JMichaelWard\JMWPlugin\Content\PostType
  */
 class Project extends JMWPostType {
 	/**
@@ -23,9 +24,9 @@ class Project extends JMWPostType {
 	protected $slug = 'jmw-project-cpt';
 
 	/**
-	 * @return array
+	 * @author Jeremy Ward <jeremy@jmichaelward.com>
 	 * @since  2019-05-27
-	 * @author Jeremy Ward <jeremy.ward@webdevstudios.com>
+	 * @return array
 	 */
 	protected function get_args(): array {
 		return [
@@ -37,9 +38,9 @@ class Project extends JMWPostType {
 	}
 
 	/**
-	 * @return array
+	 * @author Jeremy Ward <jeremy@jmichaelward.com>
 	 * @since  2019-05-27
-	 * @author Jeremy Ward <jeremy.ward@webdevstudios.com>
+	 * @return array
 	 */
 	protected function get_labels(): array {
 		return [
