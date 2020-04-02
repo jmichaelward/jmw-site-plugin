@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4b0fea4d02badcd4415410e36ea04194",
+    "content-hash": "a6b810d63d00c16a687a47658456e467",
     "packages": [
         {
             "name": "webdevstudios/oops-wp",
-            "version": "0.2.0",
+            "version": "0.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WebDevStudios/oops-wp.git",
-                "reference": "bda6b19e002748b0ff1344ad5aee5f2685f78a4f"
+                "reference": "0d94f018f385dfadaeacad88ea859e6b9096173e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WebDevStudios/oops-wp/zipball/bda6b19e002748b0ff1344ad5aee5f2685f78a4f",
-                "reference": "bda6b19e002748b0ff1344ad5aee5f2685f78a4f",
+                "url": "https://api.github.com/repos/WebDevStudios/oops-wp/zipball/0d94f018f385dfadaeacad88ea859e6b9096173e",
+                "reference": "0d94f018f385dfadaeacad88ea859e6b9096173e",
                 "shasum": ""
             },
             "require": {
@@ -36,12 +36,12 @@
             "authors": [
                 {
                     "name": "Jeremy Ward",
-                    "email": "jeremy@jmichaelward.com",
+                    "email": "jeremy.ward@webdevstudios.com",
                     "role": "Senior Backend Engineer"
                 }
             ],
             "description": "A collection of interfaces and class structures to promote object-oriented programming practices in WordPress.",
-            "time": "2019-04-01T22:18:00+00:00"
+            "time": "2020-01-31T22:26:07+00:00"
         }
     ],
     "packages-dev": [],
@@ -51,5 +51,6 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
 }

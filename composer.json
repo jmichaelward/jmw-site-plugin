@@ -1,6 +1,10 @@
 {
+    "name": "jmichaelward/jmw-site-plugin",
+    "description": "Custom site plugin for jmichaelward.com",
+    "type": "wordpress-plugin",
+    "license": "GPL-2.0-or-later",
     "require": {
-        "webdevstudios/oops-wp": "^0.2.0"
+        "webdevstudios/oops-wp": "^0.3.0"
     },
     "autoload": {
         "psr-4": {
