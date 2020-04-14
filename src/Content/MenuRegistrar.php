@@ -24,6 +24,7 @@ class MenuRegistrar extends Service {
 	 */
 	private $menus = [
 		Menu\MainMenu::class,
+		Menu\ExternalLinksMenu::class,
 	];
 
 	/**
