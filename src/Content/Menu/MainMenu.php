@@ -30,7 +30,7 @@ class MainMenu extends Menu implements Hydratable {
 	 * WordPress methods in our constructor.
 	 */
 	public function hydrate() {
-		$this->description = __( 'Primary Navigation', 'jmw-2020-theme' );
+		$this->description = __( 'Primary Navigation', 'jmw-site-plugin' );
 	}
 
 	/**
