@@ -13,6 +13,7 @@ use JMichaelWard\JMWPlugin\Content\ContentActionRegistrar;
 use JMichaelWard\JMWPlugin\Content\ContentRegistrar;
 use JMichaelWard\JMWPlugin\Content\AcfHandler;
 use JMichaelWard\JMWPlugin\Content\MenuRegistrar;
+use JMichaelWard\JMWPlugin\Theme\ThemeService;
 use JMichaelWard\JMWPlugin\View\ViewRegistrar;
 use WebDevStudios\OopsWP\Structure\Plugin\Plugin;
 
@@ -47,6 +48,7 @@ class JMWPlugin extends Plugin {
 		ContentActionRegistrar::class,
 		MenuRegistrar::class,
 		AcfHandler::class,
+		ThemeService::class,
 		ViewRegistrar::class,
 	];
 }
