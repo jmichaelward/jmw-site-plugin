@@ -12,6 +12,7 @@ namespace JMichaelWard\JMWPlugin;
 use JMichaelWard\JMWPlugin\Content\ContentActionRegistrar;
 use JMichaelWard\JMWPlugin\Content\ContentRegistrar;
 use JMichaelWard\JMWPlugin\Content\AcfHandler;
+use JMichaelWard\JMWPlugin\Content\MenuRegistrar;
 use JMichaelWard\JMWPlugin\View\ViewRegistrar;
 use WebDevStudios\OopsWP\Structure\Plugin\Plugin;
 
@@ -44,6 +45,7 @@ class JMWPlugin extends Plugin {
 	protected $services = [
 		ContentRegistrar::class,
 		ContentActionRegistrar::class,
+		MenuRegistrar::class,
 		AcfHandler::class,
 		ViewRegistrar::class,
 	];
