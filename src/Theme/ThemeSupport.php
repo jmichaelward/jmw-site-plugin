@@ -19,6 +19,7 @@ class ThemeSupport implements Registerable {
 	 * Register this theme's support with WordPress.
 	 */
 	public function register() {
+		add_theme_support( 'post-thumbnails' );
 		add_theme_support( 'title-tag' );
 	}
 }
