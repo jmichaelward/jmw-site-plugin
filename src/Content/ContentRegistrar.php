@@ -11,9 +11,12 @@ namespace JMichaelWard\JMWPlugin\Content;
 
 use JMichaelWard\JMWPlugin\Content\PostType as PostType;
 use JMichaelWard\JMWPlugin\Content\Taxonomy as Taxonomy;
+use JMichaelWard\JMWPlugin\Content\Menu as Menu;
 use WebDevStudios\OopsWP\Structure\Content\ContentType;
+use WebDevStudios\OopsWP\Structure\Menu\MenuInterface;
 use WebDevStudios\OopsWP\Structure\Service;
 use WebDevStudios\OopsWP\Utility\FilePathDependent;
+use WebDevStudios\OopsWP\Utility\Registerable;
 
 /**
  * Class ContentRegistrar
@@ -49,6 +52,17 @@ class ContentRegistrar extends Service {
 	];
 
 	/**
+	 * Array of menu class.
+	 *
+	 * @var array
+	 * @since 2021-01-10
+	 */
+	private $menus = [
+		Menu\PrimaryMenu::class,
+		Menu\ExternaLinksMenu::class,
+	];
+
+	/**
 	 * Register this service's hooks with WordPress.
 	 *
 	 * @author Jeremy Ward <jeremy@jmichaelward.com>
@@ -58,6 +72,7 @@ class ContentRegistrar extends Service {
 	public function register_hooks() {
 		add_action( 'init', [ $this, 'register_post_types' ] );
 		add_action( 'init', [ $this, 'register_taxonomies' ] );
+		add_action( 'after_setup_theme', [ $this, 'register_menus'] );
 	}
 
 	/**
@@ -87,15 +102,28 @@ class ContentRegistrar extends Service {
 	}
 
 	/**
+	 * Register navigation menus for the site.
+	 *
+	 * @author Jeremy Ward <jeremy@jmichaelward.com>
+	 * @since 2021-01-10
+	 * @return void
+	 */
+	public function register_menus() {
+		foreach ( $this->menus as $menu_class ) {
+			$this->register_content_type( new $menu_class() );
+		}
+	}
+
+	/**
 	 * Register ContentType objects with WordPress.
 	 *
-	 * @param ContentType $content_type A ContentType instance.
+	 * @param Registerable $content_type A ContentType instance.
 	 *
 	 * @author Jeremy Ward <jeremy@jmichaelward.com>
 	 * @since  2019-05-19
 	 * @return void
 	 */
-	private function register_content_type( ContentType $content_type ) {
+	private function register_content_type( Registerable $content_type ) {
 		$content_type->register();
 	}
 }
