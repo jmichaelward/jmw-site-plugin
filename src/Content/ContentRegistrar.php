@@ -70,8 +70,6 @@ class ContentRegistrar extends Service {
 	 * @return void
 	 */
 	public function register_hooks() {
-		add_action( 'init', [ $this, 'register_post_types' ] );
-		add_action( 'init', [ $this, 'register_taxonomies' ] );
 		add_action( 'after_setup_theme', [ $this, 'register_menus'] );
 	}
 
