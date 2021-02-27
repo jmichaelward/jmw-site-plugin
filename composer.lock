@@ -4,24 +4,24 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a6b810d63d00c16a687a47658456e467",
+    "content-hash": "fbde598bbd60fc78ad718405be68f9cc",
     "packages": [
         {
             "name": "webdevstudios/oops-wp",
-            "version": "0.3.0",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WebDevStudios/oops-wp.git",
-                "reference": "0d94f018f385dfadaeacad88ea859e6b9096173e"
+                "reference": "458bc9ddf32d8bbb86f19ba0c676f07a61b58798"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WebDevStudios/oops-wp/zipball/0d94f018f385dfadaeacad88ea859e6b9096173e",
-                "reference": "0d94f018f385dfadaeacad88ea859e6b9096173e",
+                "url": "https://api.github.com/repos/WebDevStudios/oops-wp/zipball/458bc9ddf32d8bbb86f19ba0c676f07a61b58798",
+                "reference": "458bc9ddf32d8bbb86f19ba0c676f07a61b58798",
                 "shasum": ""
             },
             "require": {
-                "php": "^7"
+                "php": "^7 || ^8"
             },
             "type": "library",
             "autoload": {
@@ -36,12 +36,16 @@
             "authors": [
                 {
                     "name": "Jeremy Ward",
-                    "email": "jeremy.ward@webdevstudios.com",
-                    "role": "Senior Backend Engineer"
+                    "email": "jeremy@jmichaelward.com",
+                    "role": "Software Engineer"
                 }
             ],
             "description": "A collection of interfaces and class structures to promote object-oriented programming practices in WordPress.",
-            "time": "2020-01-31T22:26:07+00:00"
+            "support": {
+                "issues": "https://github.com/WebDevStudios/oops-wp/issues",
+                "source": "https://github.com/WebDevStudios/oops-wp/tree/1.0.0"
+            },
+            "time": "2021-02-27T18:31:02+00:00"
         }
     ],
     "packages-dev": [],
@@ -52,5 +56,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "1.1.0"
+    "plugin-api-version": "2.0.0"
 }
